@@ -56,6 +56,7 @@ void LongArray::swap(int first, int second) {
             long temp = a[first];
             a[first] = a[second];
             a[second] = temp;
+            display();
         } else {
             throw "Index out of bounds";
         }
@@ -71,4 +72,6 @@ void LongArray::bubbleSort() {
         for(in=0; in<out; in++) // inner loop (forward)
             if( a[in] > a[in+1] ) // out of order?
                 swap(in, in+1); // swap them
+                
+        
 }
